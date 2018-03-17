@@ -6,15 +6,17 @@ Authors@R: c(person("Indiana", "Nikel", email = "indiana@nikel.io", role = c("au
   person("Tarini", "Bhatnagar", email = "train.bhatnagar@gmail.com", role = c("aut")))
 Description: Image Transformation.
 Depends: R (>= 3.4.3)
-Imports:png,
+Imports: png,
   testit,
   tableMatrix
 License: Apache License 2.0
 URL: https://github.com/UBC-MDS/InstaR
 Encoding: UTF-8
 LazyData: true
-Suggests: testthat,
+Suggests: 
+    testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    covr
 RoxygenNote: 6.0.1
 VignetteBuilder: knitr
