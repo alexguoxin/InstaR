@@ -1,22 +1,12 @@
 ## InstaR
 
+[![Travis-CI Build Status](https://travis-ci.org/UBC-MDS/InstaR.svg?branch=master)](https://travis-ci.org/UBC-MDS/InstaR)
 
 #### A Collaborative Software Development Project
 
-[![Travis-CI Build Status](https://travis-ci.org/tarinib/InstaR.svg?branch=master)](https://travis-ci.org/tarinib/InstaR)
-
 <img src="img/logo.png" align="right" border = "10" width="250" height="250"/>
 
-
 Date: February 9, 2018
-
-Collaborators:
-
-Bhatnagar, Tarini : [Github Profile](https://github.com/tarinib)
-
-Guo, Xin (Alex): [Github Profile](https://github.com/alexguoxin)
-
-Nikel, Indiana: [Github Profile](https://github.com/indiana-nikel)
 
 #### Overview
 
@@ -33,7 +23,7 @@ This function performs convolution to de-emphasizes differences in adjacent pixe
 This is a transformation function which flips the image either horizontally or vertically.
 
 ###### Greyscale
-This function converts an RGB image to grayscale. "amount" defines the proportion of conversion, with 100% leading to a complete grayscale and a value of 0% does not change the image at all.
+This function converts an RGB image to grayscale.
 
 *__Non transparent backround .png images required__*
 
@@ -46,26 +36,29 @@ Note: See Usage section below
 
 To install `InstaR`, follow these instructions:
 
-1. Please check if ```devtools``` has been installed. If not, open the console and input the following: install.packages("devtools") to install devtools from CRAN. Also, check the package dependencies down below.
-2. Input the following into the console: ```devtools::install_github("UBC-MDS/InstaR", build_vignettes = TRUE)```
+1. Please check if ```devtools``` has been installed. If not, open the console and input the following: `install.packages("devtools")` to install devtools from CRAN. Also, check the package dependencies down below.
+2. Input the following into the console: 
+```
+devtools::install_github("UBC-MDS/InstaR", build_vignettes = TRUE)
+```
 3. You are all set to use go!
 
 #### Usage
 
 *__Non transparent backround .png images required__*
 
-```import InstaPy```
+```library(InstaR)```
 
-1.```flip(input_path,direction,output_path)```
+1.```flip(input_path, direction, output_path)```
 
 Arguments:
 
 * ```input_path```: path to input image
 * ```direction```: direction of flip. "h" (horizontal) or "v"(vertical)
 * ```output_path```: path to output image
-* Example: ```flip("./img.png", "h","./img_flip.png")```
+* Example: ```flip("./img.png", "h", "./img_flip.png")```
 
-2.```blur(input_path,output_path)```
+2.```blur(input_path, output_path)```
 
 Arguments:
 
@@ -73,7 +66,7 @@ Arguments:
 * ```output_path```: path to output image
 * Example: ```blur("./img.png", "./img_blur.png")```
 
-3.```greyscale(input_path,output_path)```
+3.```greyscale(input_path, output_path)```
 
 Arguments:
 
