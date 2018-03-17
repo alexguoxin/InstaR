@@ -2,7 +2,7 @@
 
 [![Travis-CI Build Status](https://travis-ci.org/UBC-MDS/InstaR.svg?branch=master)](https://travis-ci.org/UBC-MDS/InstaR)
 
-[![Coverage Status](https://coveralls.io/repos/github/tarinib/InstaR/badge.svg)](https://coveralls.io/github/tarinib/InstaR)
+[![Coverage Status](https://coveralls.io/repos/github/UBC-MDS/InstaR/badge.svg)](https://coveralls.io/github/UBC-MDS/InstaR)
 
 #### A Collaborative Software Development Project
 
