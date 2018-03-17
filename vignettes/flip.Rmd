@@ -24,12 +24,14 @@ We present this package, InstaR, that performs digital image processing. It enco
 ## flip function
 This is a transformation function which flips the image either horizontally or vertically.
 
-``flip(img_path,direction,output_path```
+```flip(img_path, direction, output_path)```
 
 Aruguments:
 
-```img_path```: path to input image
-```direction```: direction of flip. "h" (horizontal) or "v"(vertical)
-```output_path```: path to output image
+- ```img_path```: path to input image
+- ```direction```: direction of flip. "h" (horizontal) or "v"(vertical)
+- ```output_path```: path to output image
 
-Example: ```flip("./img.jpg", "h","./img_flip.jpg")```
+Example: 
+
+```flip("./img.png", "h","./img_flip.png")```

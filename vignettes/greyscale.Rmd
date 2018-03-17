@@ -16,14 +16,14 @@ knitr::opts_chunk$set(
 )
 ```
 
-greyscale(input_path, output_path) converts a color image into greyscale.
+`greyscale(input_path, output_path)` converts a color image into greyscale.
 
 - Input: 
-    - input_path: string, path for the input image file
-    - output_path: string, path for the output image file
+    - `input_path`: string, path for the input png file
+    - `output_path`: string, path for the output png file
   
 - Output: an image file at the specified output path
 
-- Example: `greyscale("./img.jpg", "./img_gs.jpg")`
+- Example: `greyscale("./img.png", "./img_gs.png")`
 
 
