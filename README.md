@@ -1,40 +1,41 @@
-## InstaR
+# InstaR
 
 [![Travis-CI Build Status](https://travis-ci.org/UBC-MDS/InstaR.svg?branch=master)](https://travis-ci.org/UBC-MDS/InstaR)
-
 [![Coverage Status](https://coveralls.io/repos/github/UBC-MDS/InstaR/badge.svg)](https://coveralls.io/github/UBC-MDS/InstaR)
 
-#### A Collaborative Software Development Project
+DSCI 524 Collaborative Software Development Project
 
-<img src="img/logo.png" align="right" border = "10" width="250" height="250"/>
+February 9, 2018
 
-Date: February 9, 2018
+<img src="img/logo.png" align="right" border = "10" width="150" height="150"/>
 
-#### Overview
+### Overview
 
-According to a [study](http://comp.social.gatech.edu/papers/icwsm15.why.bakhshi.pdf) by Yahoo Labs, “Filtered photos are 21 percent more likely to be viewed and 45 percent more likely to be commented on. Have you ever wondered how you could transform your images using filters similar to Instagram in R?
+According to a [study](http://comp.social.gatech.edu/papers/icwsm15.why.bakhshi.pdf) by Yahoo Labs, "Filtered photos are 21 percent more likely to be viewed and 45 percent more likely to be commented on." Have you ever wondered how you could transform your images using filters similar to Instagram in R?
 
 We present this package that performs digital image processing on .png images.  It encompasses functions ranging from transformations like a simple flip, playing with color hues (rgb2gray) to 2D convolutions using a simple kernel matrix to do some interesting things! We have started with quite basic but diverse functions and hope to advance and add more with time.
 
-#### Functions
+### Functions
 
-###### Blur
+- Blur
+
 This function performs convolution to de-emphasizes differences in adjacent pixel values. It has an averaging effect removing detail and noise resulting in blurring of the image.
 
-###### Flip
+- Flip
+
 This is a transformation function which flips the image either horizontally or vertically.
 
-###### Greyscale
-This function converts an RGB image to grayscale.
+- Greyscale
 
-*__Non transparent background .png images required__*
+This function converts an RGB image to grayscale.
 
 Note: See Usage section below
 
-#### R ecosystem
+### R Ecosystem
+
 "A picture paints a thousand words", however, a well-constructed image speaks even more than that without having to rely on a written description. We want to explore the elements of filters and their implementation in R. A similar package called ["magick"](https://cran.r-project.org/web/packages/magick/index.html)  exists in R which has standard filters like blur, sobel among others. We have started with a few basic functions but want to work towards building more advanced filters similar to the ones provided by Instagram.
 
-#### Installation
+### Installation
 
 To install `InstaR`, follow these instructions:
 
@@ -43,9 +44,9 @@ To install `InstaR`, follow these instructions:
 ```
 devtools::install_github("UBC-MDS/InstaR", build_vignettes = TRUE)
 ```
-3. You are all set to use go!
+3. You are all set to go!
 
-#### Usage
+### Usage
 
 *__Non transparent background .png images required__*
 
@@ -77,7 +78,7 @@ Arguments:
 * Example: ```greyscale("./img.png", "./img_gs.png")```
 
 
-#### Package dependencies
+### Package Dependencies
 
 ```png```
 
@@ -85,7 +86,7 @@ Arguments:
 
 ```tableMatrix```
 
-#### Collaborators:
+### Collaborators:
 
 [Bhatnagar, Tarini](https://github.com/tarinib)
 
